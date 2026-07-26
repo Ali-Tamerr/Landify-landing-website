@@ -1,0 +1,871 @@
+body{
+    margin: 0;
+    overscroll-behavior: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@media (min-width: 1201px){
+    .background-1{
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        top: -200px;
+    }
+    .background-2, .background-3{
+        display: none;
+    }
+    .container-one{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 100px;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 70px;
+    }
+    .container-one-1st-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 60px;
+        font-weight: 900;
+    }
+    .container-one-left-side{
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        justify-content: space-around;
+        margin-top: -65px;
+        min-width: 630px;
+    }
+    .container-one-2nd-p-div, .container-one-1st-p-div{
+        width: 650px;
+    }
+    .btn-1{
+        color: white;
+        background-color: rgb(124,58,237);
+        border: solid 0;
+        border-radius: 8px;
+        height: 65px;
+        width: 165px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .btn-2 img{
+        width: 30px;
+    }
+    .btn-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 70px;
+        width: 150px;
+        color: rgb(124,58,237);
+        border: solid 0;
+        background: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .container-one-buttons-div{
+        display: flex;
+        height: 80px;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-one-2nd-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 19px;
+    }
+    .iphone-mockup-one{
+        top: 55px;
+        margin-right: 45px;
+    }
+    .banner-1{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 170px;
+        margin-bottom: 60px;
+    }
+    .banner-1-div{
+        min-width: 1000px;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .header-2{
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        height: 140px;
+        margin-bottom: 50px;
+    }
+    .grid-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 87%;
+    }
+    .header-3{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        top: 17px;
+        left: 220px;
+    }
+    .header-3-sen-1{
+        font-weight: 900;
+        font-size: 46px;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+    .header-3-sen-2{
+        font-size: 18px;
+    }
+    .header-3-img{
+        width: 142px;
+        opacity: 40%;
+        position: relative;
+        top: 55px;
+        left: -110px;
+    }
+    .container-three{
+        height: 900px;
+        position: relative;
+        width: 100%;
+        background-color: rgb(213,250,252);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .airbnb-div{
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        background-color: white;
+        border-radius: 10px;
+        width: 430px;
+        height: 250px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 30px;
+    }
+    .hubspot-div{
+        position: absolute;
+        top: 330px;
+        right: 720px;
+        background-color: white;
+        border-radius: 10px;
+        width: 330px;
+        height: 340px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 30px;
+    }
+    
+    .strapi-div{
+        position: absolute;
+        top: 540px;
+        right: 300px;
+        background-color: white;
+        border-radius: 10px;
+        width: 330px;
+        height: 200px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 30px;
+    }
+    .hubspot-img{
+        margin-top: 10px;
+    }
+    .airbnb-div-2, .hubspot-div-2, .strapi-div-2{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 7px;
+    }
+    .container-four, .container-five{
+        margin: 60px 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .c4-left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        margin-right: 200px;
+    }
+    .c4-right-side{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        height: 200px;
+        width: 550px;
+        margin-right: 30px;
+    }
+    .c5-left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 150px;
+        height: 170px;
+    }
+    .c5-images-row-1{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 432px;
+    }
+    .c5-images-row-2{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 310px;
+    }
+    .c5-images-row-1 img, .c5-images-row-2 img{
+        width: 64px;
+        height: 64px;
+    }
+    .c5-right-side{
+        margin-top: 30px;
+        margin-right: 55px;
+    }
+    .c5-right-side-div{
+        margin-top: -270px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .c4-left-side-span-1, .c5-left-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 45px;
+        min-width: 400px;
+        max-width: 700px;
+    }
+    .c4-right-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .c4-left-side-span-2, .c5-left-side-span-2{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 716px) and (max-width: 1200px){
+    .background-2{
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        top: -300px;
+    }
+    .background-1, .background-3{
+        display: none;
+    }
+    .container-one{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 100px 40px;
+        margin-bottom: 20px;
+    }
+    .container-one-1st-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 60px;
+        font-weight: 900;
+    }
+    .container-one-left-side{
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        max-width: 960px;
+        min-width: none;
+    }
+    .btn-1{
+        color: white;
+        background-color: rgb(124,58,237);
+        border: solid 0;
+        border-radius: 8px;
+        height: 65px;
+        width: 165px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .btn-2 img{
+        width: 30px;
+    }
+    .btn-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 70px;
+        width: 150px;
+        color: rgb(124,58,237);
+        border: solid 0;
+        background: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .container-one-buttons-div{
+        display: flex;
+        height: 80px;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-one-2nd-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 19px;
+    }
+    .container-one-1st-p-div, .container-one-2nd-p-div{
+        margin-bottom: 20px;
+    }
+    .banner-1{
+        margin-top: 10px;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 170px;
+        margin-bottom: 60px;
+    }
+    .banner-1-div{
+        width: 700px;
+        min-width: none;
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .header-2{
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        height: 140px;
+        margin: 0 50px;
+        margin-bottom: 50px;
+    }
+    .grid-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 87%;
+    }
+    .header-3{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        top: 17px;
+        left: 40px;
+    }
+    .header-3-sen-1{
+        font-weight: 900;
+        font-size: 35px;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+    .header-3-sen-2{
+        font-size: 15px;
+    }
+    .header-3-img{
+        width: 142px;
+        opacity: 40%;
+        position: relative;
+        top: 55px;
+        left: -25px;
+    }
+    .container-three{
+        position: relative;
+        width: 100%;
+        background-color: rgb(213,250,252);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airbnb-div{
+        margin-top: 280px;
+    }
+    .airbnb-div, .hubspot-div, .strapi-div{
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 30px;
+    }
+    .hubspot-img{
+        margin-bottom: 30px;
+    }
+    .airbnb-div-2, .hubspot-div-2{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 7px;
+    }
+    .strapi-div-2{
+        display: flex;
+        margin-right: 7px;
+    }
+    .container-four{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .c4-left-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 45px;
+    }
+    .c4-right-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .c4-left-side-span-2{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 17px;
+    }
+    .c4-left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 70px;
+    }
+    .c4-right-side{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+        width: 100%;        
+        margin-top: 30px;
+    }
+    .container-five{
+        margin: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .c5-left-side{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    .c5-images-row-1{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 332px;
+    }
+    .c5-images-row-2{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 240px;
+    }
+    .c5-images-row-1 img, .c5-images-row-2 img{
+        width: 50px;
+        height: 50px;
+    }
+    .c5-right-side-div{
+        margin-top: -200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .c5-semi-circle{
+        width: 360px;
+    }
+    .c5-left-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 40px;
+        min-width: 300px;
+        margin-bottom: 10px;
+    }
+    .c5-left-side-span-2{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 15px;
+        max-width: 1000px;
+        min-width: 100px;
+    }
+}
+@media (max-width: 715px){
+    .background-3{
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        top: -500px;
+    }
+    .background-2, .background-1{
+        display: none;
+    }
+    .container-one{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 100px 40px;
+        margin-bottom: 20px;
+    }
+    .container-one-1st-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .container-one-left-side{
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        max-width: 960px;
+        min-width: none;
+    }
+    .btn-1{
+        color: white;
+        background-color: rgb(124,58,237);
+        border: solid 0;
+        border-radius: 8px;
+        height: 65px;
+        width: 165px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .btn-2 img{
+        width: 30px;
+    }
+    .btn-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 70px;
+        width: 150px;
+        color: rgb(124,58,237);
+        border: solid 0;
+        background: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .container-one-buttons-div{
+        display: flex;
+        height: 80px;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-one-2nd-p{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 19px;
+    }
+    .container-one-1st-p-div, .container-one-2nd-p-div{
+        margin-bottom: 20px;
+    }
+    .iphone-mockup-one{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .banner-1{
+        margin-top: 10px;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 170px;
+        margin-bottom: 210px;
+    }
+    .banner-1-div{
+        width: 400px;
+        min-width: none;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .header-2{
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        height: 140px;
+        margin: 0 50px;
+        margin-bottom: 50px;
+    }
+    .grid-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 87%;
+    }
+    .header-3{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        top: 17px;
+        left: 40px;
+    }
+    .header-3-sen-1{
+        font-weight: 900;
+        font-size: 35px;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+    .header-3-sen-2{
+        font-size: 15px;
+    }
+    .header-3-img{
+        width: 142px;
+        opacity: 40%;
+        position: relative;
+        top: 55px;
+        left: -25px;
+    }
+    .container-three{
+        position: relative;
+        width: 100%;
+        background-color: rgb(213,250,252);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airbnb-div{
+        margin-top: 280px;
+    }
+    .airbnb-div, .hubspot-div, .strapi-div{
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.082);
+        padding: 30px;
+    }
+    .hubspot-img{
+        margin-bottom: 30px;
+    }
+    .airbnb-div-2, .hubspot-div-2{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 7px;
+    }
+    .strapi-div-2{
+        display: flex;
+        margin-right: 7px;
+    }
+    .container-four{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .c4-left-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 45px;
+    }
+    .c4-right-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .c4-left-side-span-2{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 17px;
+    }
+    .c4-left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 70px;
+    }
+    .c4-right-side{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30px;
+        width: 100%;        
+        margin-top: 30px;
+    }
+    .container-five{
+        margin: 40px;
+        display: flex;
+        height: 380px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .c5-left-side{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .c5-images-row-1{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 332px;
+    }
+    .c5-images-row-2{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 240px;
+    }
+    .c5-images-row-1 img, .c5-images-row-2 img{
+        width: 50px;
+        height: 50px;
+    }
+    .c5-right-side-div{
+        margin-top: -200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .c5-semi-circle{
+        width: 360px;
+    }
+    .c5-left-side-span-1{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-weight: 900;
+        font-size: 40px;
+        min-width: 300px;
+        margin-bottom: 10px;
+    }
+    .c5-left-side-span-2{
+        font-family: "Plus Jakarta Sans", Arial, Helvetica;
+        font-size: 15px;
+        max-width: 1000px;
+        min-width: 100px;
+    }
+}
+
+.btn-2-div{
+    display: inline-block;
+}
+.container-one-buttons-div button{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+}
+.hr-1{
+    width: 80%;
+    opacity: 20%;
+}
+.banner-1-div img{
+    width: 95px;
+}
+.container-two, .header-2, .grid-1 div{
+    display: flex;
+    flex-direction: column;
+}
+.container-two{
+    align-items: center;
+    margin-bottom: 50px;
+}
+.grid-1 div{
+    height: 160px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+.h1{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+    font-size: 47px;
+    font-weight: 900;
+}
+.h2{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+    font-size: 18px;
+}
+.grid-1-imgs{
+    width: 30px;
+}
+.sen-1{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 10px;
+}
+.sen-2{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+    font-size: 15px;
+    color: rgb(68, 68, 68);
+}
+.container-three span{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+}
+.airbnb-img, .hubspot-img, .strapi-img{
+    width: 110px;
+}
+.airbnb-img, .strapi-img{
+    margin-bottom: 30px;
+}
+.comma-img{
+    margin-top: -1px;
+    width: 17px;
+    height: 13px;
+    margin-right: 15px;
+}
+.airbnb-div, .hubspot-div, .strapi-div,
+.airbnb-div-2 div, .hubspot-div-2 div, .strapi-div-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.story-span-1{
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.story-span-2{
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.story-span-3{
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+}
+.container-five{
+    padding-top: 40px;
+}
+.c4-right-side-span-2{
+    font-family: "Plus Jakarta Sans", Arial, Helvetica;
+}
+.c4-right-side-spans{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.c4-right-side-content{
+    display: flex;
+    align-items: center;
+}
+.c4-right-side-content img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
