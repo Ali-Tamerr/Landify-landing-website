@@ -870,3 +870,77 @@ body::-webkit-scrollbar{
     height: 30px;
     margin-right: 20px;
 }
+
+/* Toast Notification Popup (Light Theme matching Landify) */
+.toast-popup {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    max-width: 480px;
+    background: #ffffff;
+    color: #1e293b;
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(124, 58, 237, 0.08);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-left: 4px solid rgb(124, 58, 237);
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.toast-popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.toast-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.toast-content p {
+    margin: 0;
+    color: #475569;
+}
+
+.toast-content strong {
+    color: rgb(124, 58, 237);
+}
+
+.toast-close {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+ 
+    align-self: start;
+    transition: color 0.2s ease;
+}
+
+.toast-close:hover {
+    color: #0f172a;
+}
+
+@media (max-width: 480px) {
+    .toast-popup {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        max-width: none;
+    }
+}
